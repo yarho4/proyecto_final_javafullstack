@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SignosService } from '../../services/signos.service';
 import { Signos } from '../../model/signos';
-import { NgFor } from '@angular/common';
 import { MaterialModule } from '../../material/material.module';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
