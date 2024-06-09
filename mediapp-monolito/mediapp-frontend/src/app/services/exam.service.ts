@@ -10,6 +10,6 @@ import { environment } from '../../environments/environment.development';
 export class ExamService extends GenericService<Exam> {
 
   constructor(protected override http: HttpClient) {
-    super(http, `${environment.HOST}/${environment.MICRO_CRUD}/exams`);
+    super(http, `${environment.HOST}exams`);
   }
 }

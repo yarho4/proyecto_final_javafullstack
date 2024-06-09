@@ -62,7 +62,7 @@ public class SignosController {
 
     @PutMapping("/{id}")
     public ResponseEntity<SignosDTO> update(@Valid @PathVariable("id") Integer id, @RequestBody SignosDTO dto){
-        dto.setIdPatient(id);
+        dto.setIdSignos(id);
         Signos obj = service.update(id, convertToEntity(dto));
 
         return ResponseEntity.ok(convertToDto(obj));

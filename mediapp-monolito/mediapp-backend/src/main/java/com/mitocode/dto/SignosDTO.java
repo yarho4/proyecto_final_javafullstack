@@ -1,5 +1,6 @@
 package com.mitocode.dto;
 
+import com.mitocode.model.Patient;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,10 +15,11 @@ public class SignosDTO {
 
     private Integer idSignos;
 
-    private Integer idPatient;
-
     @NotNull
     private LocalDateTime fecha;
+
+    @NotNull
+    private Patient patient;
 
     @NotNull
     @NotBlank

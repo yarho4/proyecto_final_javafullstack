@@ -14,7 +14,7 @@ export class SpecialtyService extends GenericService<Specialty> {
   private messageChange: Subject<string> = new Subject<string>();
 
   constructor(protected override http: HttpClient) {
-    super(http, `${environment.HOST}/${environment.MICRO_CRUD}/specialties`);
+    super(http, `${environment.HOST}/specialties`);
   }
 
   ////////////////////////

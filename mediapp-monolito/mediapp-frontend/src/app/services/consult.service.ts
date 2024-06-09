@@ -10,7 +10,7 @@ import { Consult } from '../model/consult';
 })
 export class ConsultService {
 
-  private url: string = `${environment.HOST}/${environment.MICRO_CR}/consults`;
+  private url: string = `${environment.HOST}/consults`;
 
   constructor(private http: HttpClient) { }
 
@@ -32,7 +32,7 @@ export class ConsultService {
   }
 
   getExamsByIdConsult(idConsult: number){
-    return this.http.get<any>(`${environment.HOST}/${environment.MICRO_CR}/consultexams/${idConsult}`);
+    return this.http.get<any>(`${environment.HOST}/consultexams/${idConsult}`);
   }
 
   callProcedureOrFunction(){
